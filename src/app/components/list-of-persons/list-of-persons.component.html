@@ -1,0 +1,24 @@
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">id</th>
+        <th scope="col">name</th>
+        <th scope="col">age</th>
+        <th scope="col">job</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let person of persons">
+        <th>{{person.id}}</th>
+        <th>{{person.name}}</th>
+        <td>{{person.age}}</td>
+        <td>{{person.job}}</td>
+        <td><button class="btn btn-primary"  routerLink="/updateperson/{{person.id}}/{{person.name}}/{{person.age}}/{{person.job}}">Update</button> <button class="btn btn-danger" (click)="delete(person.id)">Delete</button></td>
+      </tr>
+    </tbody>
+  </table>
+  <button class="btn btn-success" routerLink="/addperson">Create person</button>
+  <button class="btn btn-danger" routerLink="">Log out</button>
+
+ 

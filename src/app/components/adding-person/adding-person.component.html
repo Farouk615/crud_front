@@ -1,0 +1,16 @@
+<form [formGroup]="personForm" (ngSubmit)="addNew()">
+    <div class="form-group">
+      <label for="name">name</label>
+      <input type="text" class="form-control" formControlName="name" placeholder="Name">
+    </div>
+    <div class="form-group">
+      <label for="age">Age</label>
+      <input type="number" class="form-control" formControlName="age" placeholder="age">
+    </div>
+    <div class="form-group">
+        <label for="job">Job</label>
+        <input type="text" class="form-control" formControlName="job" placeholder="job">
+      </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+  <button class="btn btn-success" routerLink="/persons">Go to person List </button>
