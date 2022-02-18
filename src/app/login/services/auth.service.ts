@@ -21,15 +21,11 @@ export class AuthService {
   
   login(credentials:any){
     return this.http.post("http://127.0.0.1:8000/api/login_check",credentials);
-    //console.log(token);
-    //this.isSaveToken(token);
+  }
+  register(credentials:any){
+    return this.http.post("http://127.0.0.1:8000/api/users",credentials);
   }
   saveDataProfil(token:any){
-  //   //localStorage.setItem('email',email);
-  //   //localStorage.setItem('role',role);
-  //   //this.person.email=email;
-  //  // this.person.role=role;
-  //   this.isLoggedIn=true;
   localStorage.setItem('token',token);
   const decodedToken = this.helper.decodeToken(token)
   this.person.email=decodedToken.username;

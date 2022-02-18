@@ -1,0 +1,12 @@
+<h3 class="word"> Register  </h3>
+<form [formGroup]="registerForm" (ngSubmit)="mkRegister()" class="form">
+  <div class="mb-3 form-check">
+    <label for="email">Email</label>
+    <input type="email" class="form-control" formControlName="email" placeholder="Email">
+  </div>
+  <div class="mb-3 form-check">
+    <label for="plainPassword">Password</label>
+    <input type="password" class="form-control" formControlName="plainPassword" placeholder="Password">
+  </div>
+  <button type="submit" class="btn btn-primary button">Submit</button>
+</form>

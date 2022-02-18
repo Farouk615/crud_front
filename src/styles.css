@@ -1,1 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
+.form{
+    background-color: bisque;
+}
+.button{
+    margin-left: 50%;
+}
+.word{
+    color: brown;
+    margin-left: 50%;
+}
+.nn{
+    background-color: bisque;
+}

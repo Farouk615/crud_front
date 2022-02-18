@@ -39,6 +39,5 @@ export class UpdateComponent implements OnInit {
 update(){
   this.personService.updatePerson(this.personForm.value,this.id);
   this.rout.navigate(['persons'])
-
 }
 }

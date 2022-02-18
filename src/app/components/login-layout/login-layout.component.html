@@ -1,14 +1,15 @@
-<h3> Log in Now to continue </h3>
-<form [formGroup]="loginForm" (ngSubmit)="mkLogin()">
-  <div class="form-group">
+<h3 class="word"> Log in </h3>
+<form [formGroup]="loginForm" (ngSubmit)="mkLogin()" class="form">
+  <div class="mb-3 form-check">
     <label for="email">Email</label>
     <input type="email" class="form-control" formControlName="email" placeholder="Email">
   </div>
-  <div class="form-group">
+  <div class="mb-3 form-check">
     <label for="password">Password</label>
     <input type="password" class="form-control" formControlName="password" placeholder="Password">
   </div>
-  <button type="submit" class="btn btn-primary">Submit</button>
+  <button type="submit" class="btn btn-primary button">Submit</button>
   <br>
-  <button type="submit" class="btn btn-success">Register</button>
 </form>
+<button class="btn btn-success " routerLink="/register">Register</button>
+

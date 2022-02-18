@@ -9,6 +9,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { LoginLayoutComponent } from './components/login-layout/login-layout.component';
 import { UpdateComponent } from './components/update/update.component';
+import { RegisterComponent } from './components/register/register.component';
 
 
 @NgModule({
@@ -18,6 +19,7 @@ import { UpdateComponent } from './components/update/update.component';
     AddingPersonComponent,
     LoginLayoutComponent,
     UpdateComponent,
+    RegisterComponent,
   ],
   imports: [
     BrowserModule,
